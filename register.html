@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/css.css"> 
+    <title>กิ๋นตวย | Register</title>
+</head>
+
+<body>
+    <div class="grid-container-2">
+        <div class="register">
+            <img class="reg" src="/images/logo.png" alt="โลโก้กิ๋นตวย">
+            <form action="/register" method="POST">
+                <input class="g2" type="user" name="user" placeholder=" Username"><br>
+                <input class="g2" type="email" name="email" placeholder=" Email"><br>
+                <input class="g2" type="password" name="password" placeholder=" Password"><br>
+                <input class="g2" type="tel" name="tel" placeholder=" Phone Number"><br>
+                <div class="center">
+                    <div class="form-input">
+                      <div class="preview">
+                        <img id="file-ip-1-preview">
+                      </div>
+                      <label for="file-ip-1">Upload QR Code</label>
+                      <input type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
+                      
+                    </div>
+                  </div> 
+                  <script type="text/javascript">
+                    function showPreview(event){
+                    if(event.target.files.length > 0){
+                      var src = URL.createObjectURL(event.target.files[0]);
+                      var preview = document.getElementById("file-ip-1-preview");
+                      preview.src = src;
+                      preview.style.display = "block";
+                    }
+                  }
+                  </script><br>
+                <input class="register-2" type="submit" value="Register">
+                <input class="reset" type="reset" value="Cancel">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
