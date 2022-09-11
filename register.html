@@ -12,15 +12,17 @@
 <body class="welcome">
     <div class="register">
         <img src="./images/logo.png" alt="logo" id="register-logo">
-        <input type="text" name="username" id="username" placeholder="Username">
-        <input type="email" name="email" id="email" placeholder="E-mail">
-        <input type="password" name="password" id="email" placeholder="Password">
-        <input type="tel" name="tel" id="tel" placeholder="Phone Number">
-        <span>QRcode: </span><input type="file" name="file" id="qrcode">
-        <div class="container">
-            <input type="submit" value="Login" id="btn-submit">
-            <input type="reset" value="Cancel">
-        </div>
+        <form action="action_page.php" method="post">
+            <input type="text" name="username" id="username" placeholder="Username" required>
+            <input type="email" name="email" id="email" placeholder="E-mail" required>
+            <input type="password" name="password" id="email" placeholder="Password" required>
+            <input type="tel" name="tel" id="tel" placeholder="Phone Number" required>
+            <span>QRcode: </span><input type="file" name="file" id="qrcode" required>
+            <div class="container">
+                <input type="submit" value="Register" id="submit-reg">
+                <input type="reset" value="Cancel">
+            </div>
+        </form>
     </div>
 </body>
 
