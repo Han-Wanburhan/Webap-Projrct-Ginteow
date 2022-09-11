@@ -1,8 +1,11 @@
-/**start-login**/
+/**start-login.html**/
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-.welcome {
+body {
     background: #FFBD59;
+}
+
+.welcome {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -80,9 +83,9 @@ button {
 .login {
     margin-top: -10%;
 }
-/**end-login**/
+/**end-login.html**/
 
-/**start-register**/
+/**start-register.html**/
 
 .register {
     width: 25%;
@@ -133,8 +136,38 @@ span {
     cursor: pointer;
     font-size: 10pt;
   }
-/**end-register**/
+/**end-register.html**/
 
-/**start-service**/
+/**start-service.html**/
+.logo-main {
+    width: 7%;
+    position: absolute;
+    left: 1%;
+    top: -1%;
+}
 
-/**end-service**/
+.profile {
+    width: 4%;
+    position: absolute;
+    right: 1%;
+    top: 3%;
+}
+
+.buy, .sell {
+    border: 8px solid #7F664F;
+    border-radius: 9px;
+    background: #FFFFFF;
+    color: #FFBD59;
+    font-weight: bolder;
+    font-size: 1500%;
+}
+
+.buy {
+    margin-right: 10%;
+    padding: 50px 50px;
+}
+.sell {
+    margin-left: 10%;
+    padding: 50px 60px;
+}
+/**end-service.html**/
