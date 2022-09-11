@@ -1,0 +1,123 @@
+/**start-login**/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+.welcome {
+    background: #FFBD59;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+img#login-logo {
+    width: 80%;
+}
+
+a {
+    color: #FFFFFF;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+input[type=email], input[type=password], input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 16px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 4px solid #7F664F;
+    border-radius: 9px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 10px 8%;
+    border: 4px solid #7F664F;
+    border-radius: 9px;
+    background: #7ED957;
+    color: #FFFFFF;
+    font-weight: bolder;
+    margin-bottom: 4%;
+}
+
+input[type=button] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 10px 8%;
+    border: 4px solid #7F664F;
+    border-radius: 9px;
+    background: #38B6FF;
+    color: #FFFFFF;
+    font-weight: bolder;
+    margin-bottom: 4%;
+}
+
+::placeholder {
+    color: #FFBD59;
+    font-weight: bolder;
+}
+
+.login {
+    margin-top: -10%;
+}
+/**end-login**/
+
+/**start-register**/
+
+.register {
+    width: 25%;
+}
+
+img#register-logo {
+    width: 100%;
+    margin-top: -20%;
+    margin-bottom: -15%;
+}
+
+input[type="reset"] {
+    width: 80%;
+    padding: 8px 0;
+    margin: 12px 7%;
+    border: 4px solid #7F664F;
+    border-radius: 9px;
+    background: #C51F1B;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+input#btn-submit {
+    width: 80%;
+    padding: 8px 0;
+    margin: 12px 7%;
+    border: 4px solid #7F664F;
+    border-radius: 9px;
+    background: #7ED957;
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+span {
+    font-weight: bold;
+    color: #FFFFFF;
+}
+/**end-register**/
