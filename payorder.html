@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>กิ๋นตวย | Payorder</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/payorder.css">
     <link rel="stylesheet" href="./css/navbar.css">
-    <title>กิ๋นตวย | Main</title>
 </head>
 
 <body>
@@ -44,27 +44,33 @@
         </ul>
     </nav>
     <!--End-Navbar-->
-    <div class="main">รายการอาหาร</div>
+    <div class="main">ชำระค่าบริการ</div>
     <div class="bottomcontainer">
-        <div class="flex-container1">
-            <div class="item"><img src="./images/Kraprao.jfif" alt="logo" class="item-img"><br>
-                <div class="name-item">กระเพราไก่</div>
-                <div class="time">00.00-10.00</div>
+        <div class="item"><img src="./images/Kraprao.jfif" alt="logo" class="item-img"><br>
+            <div class="name-item">ปูตีกัมมาสาลา <td class="price">35฿</td>
             </div>
-            <div class="item"><img src="./images/nutget.jpg" alt="logo" class="item-img"><br>
-                <div class="name-item">แกงเขียวหวานไก่</div>
-                <div class="time">00.00-10.00</div>
+            <div class="shop-name">ร้าน : เจ้เล็กข้าวแกงตามสั่ง</div>
+            <div class="more-detail">รายละเอียด
+                <div class="box">
+                    <div class="text">โคตรอร่อยเลยครับร้นนี้ใครสนใจอยากสั่งมาตำเลอ</div>
+                </div>
             </div>
-            <div class="item"><img src="./images/nutget.jpg" alt="logo" class="item-img"><br>
-                <div class="name-item">ข้าวผัดอเมริกา</div>
-                <div class="time">00.00-10.00</div>
+            <div class="check-box">
+                <label>
+                    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> พิเศษ +5 บาท</label><br>
+                <label>
+                    <input type="checkbox" class="radio" value="1" name="fooby[1][]" /> ไข่ดาว +5 บาท</label>
             </div>
-            <div class="item"><img src="./images/nutget.jpg" alt="logo" class="item-img"><br>
-                <div class="name-item">ปูตีกัมมาสาลา</div>
-                <div class="time">00.00-10.00</div>
+            <div class="note">หมายเหตุ
+                <div class="box">
+                    <div class="text">เอามะนาวช้อนและพริกน้ำปลาด้วย</div>
+                </div>
+            </div>
+            <div class="pay-cancel">
+                <button class="pay-button">Pay</button>
+                <button class="cancel-button">cancel</button>
             </div>
         </div>
-    </div>
     </div>
 </body>
 

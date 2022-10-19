@@ -199,6 +199,7 @@ span {
 }
 
 .bottomcontainer {
+    left: 6.5%;
     position: relative;
     border: 8px solid #7F664F;
     border-radius: 9px;
@@ -208,6 +209,7 @@ span {
     width: 86.1vw;
     font-size: 30px;
     overflow: auto;
+
 }
 
 .flex-container1 {
@@ -257,8 +259,17 @@ span {
     text-align: center;
     font-size: 60%;
 }
-@media screen and (max-width: 414px) {
+.main{
+    text-align: center;
+    margin-top: -7%;
+    margin-bottom: 3%;
+    font-weight: bold;
+    font-size: 5vw;
+    color: white;
+}
+@media screen and (max-width: 585px) {
     .bottomcontainer {
+        left: 3%;
         position: relative;
         border: 8px solid #7F664F;
         border-radius: 9px;
@@ -280,6 +291,7 @@ span {
         margin-left: 9%;
         flex-wrap: wrap;
         text-align: center;
+        margin-left: 2%;
     }
     .item {
         display: flex;
@@ -291,6 +303,7 @@ span {
     }
     
     .item-img {
+        margin-left: -4%;
         width: 131px;
         height: 100px;
         position: relative;
@@ -302,12 +315,17 @@ span {
         border-radius: 9px;
         text-align: center;
         font-size: 3vw;
-        width: 35%;
+        width: 100%;
+        margin-left: -55%;
+        
     }
     .name-item{
+        text-align: left;
         margin-top: 4%;
         font-size: 4vw;
-        width: 35vw;
+        width: 100vw;
+        margin-left: 5%;
     
     }
 }
+
