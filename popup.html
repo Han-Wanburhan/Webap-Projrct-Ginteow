@@ -46,27 +46,55 @@
     </nav>
     <!--End-Navbar-->
 
-    <center><button class="pay-button2" id="pop">pay</button></center>
+    <!--Content-Popup-->
     <div class="popup1">
-        <div class="pay-cancel">
-            <h1>ข้าวหมา</h1>
-            <br />
-            <br />
-            <button class="pay-button2" id="pay">Pay</button>
-            <button class="cancel-button2" id="close">cancel</button>
+        <img src="./images/Kraprao.jfif" alt="logo" class="item-img" />
+        <div class="name-item">
+            ข้าวผัด
+            <td class="price">35฿</td>
+        </div>
+        <div class="shop-name">ร้าน : เจ้เล็กข้าวแกงตามสั่ง</div>
+        <div class="flex-container">
+            <div class="flex-item-left">
+                <p>รายการอาหาร</p>
+                <p style="margin-left: 9%">ข้าวผัด</p>
+                <p style="margin-left: 9%">ไข่ดาว</p>
+                <p style="margin-left: 9%">ค่าหิ้ว</p>
+                <p style="margin-left: 9%">รวม</p>
+                <p>ที่อยู่</p>
+            </div>
+            <div class="flex-item-right">
+                <p>ราคา</p>
+                <p style="margin-left: 9%">35</p>
+                <p style="margin-left: 9%">5</p>
+                <p style="margin-left: 9%">10</p>
+                <p style="margin-left: 9%">50</p>
+                </form>
+            </div>
+        </div>
+        <input type="text" name="address" id="address" placeholder="ที่อยู่" required>
+        <br>
+        <img src="./images/qr.png" alt="logo" class="qr" />
+        <div class="ฺbtn">
+            <button class="btn-popup-pay" id="pay">Pay</button>
+            <button class="btn-popup-cancel" id="close">cancel</button>
         </div>
     </div>
+
     <div class="popup2">
         <div class="pay-cancel">
-            <img src="./images/success.png" alt="" />
+            <br />
+            <img src="./images/success.png" alt="" class="success" />
             <br />
             <br />
             <h1>ชำระสำเร็จ</h1>
             <br />
             <br />
-            <button class="success_button" id="close2">BACK</button>
+            <button class="btn-popup-success" id="close2">BACK</button>
         </div>
     </div>
+    <!--End-Content-Popup-->
+
     <!--Script-->
     <script type="text/javascript">
         document.getElementById("pop").onclick = popup1;
@@ -89,6 +117,7 @@
                 });
         }
     </script>
+    <!--End Script-->
 </body>
 
 </html>
