@@ -1,0 +1,59 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.popup1,
+.popup2 {
+    background-color: #ffffff;
+    width: 900px;
+    height: 650px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    border: 10px solid #7F664F;
+    font-family: "Poppins", sans-serif;
+    display: none;
+    text-align: center;
+}
+
+.success_button {
+    background: #7090FF;
+}
+
+.pay-button2 {
+    background: #7ED957;
+}
+
+.cancel-button2 {
+    background: #dd2323;
+}
+
+.pay-button2,
+.cancel-button2,
+.success_button {
+    font-size: 20px;
+    border: 5px solid #7F664F;
+    border-radius: 9px;
+}
+
+.pay-button2,
+.cancel-button2,
+.success_button {
+    width: 150px;
+    height: 45px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+img {
+    width: 55%;
+}

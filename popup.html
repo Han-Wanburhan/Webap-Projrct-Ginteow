@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/service.css" />
+    <link rel="stylesheet" href="./css/popup.css" />
+    <title>กิ๋นตวย | POPUP</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <nav>
+        <ul>
+            <li>
+                <img src="./images/logo.png" alt="logo" id="logo" />
+            </li>
+            <li>
+                <img src="images/profile.png" class="profile" />
+                <ul>
+                    <li class="sub-item">
+                        <span class="material-icons-outlined"> grid_view </span>
+                        <p>Dashboard</p>
+                    </li>
+                    <li class="sub-item">
+                        <span class="material-icons-outlined">
+                format_list_bulleted
+              </span>
+                        <p>My Orders</p>
+                    </li>
+                    <li class="sub-item">
+                        <span class="material-icons-outlined"> manage_accounts </span>
+                        <p>Update Profile</p>
+                    </li>
+                    <li class="sub-item">
+                        <span class="material-icons-outlined"> logout </span>
+                        <p>Logout</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <!--End-Navbar-->
+
+    <center><button class="pay-button2" id="pop">pay</button></center>
+    <div class="popup1">
+        <div class="pay-cancel">
+            <h1>ข้าวหมา</h1>
+            <br />
+            <br />
+            <button class="pay-button2" id="pay">Pay</button>
+            <button class="cancel-button2" id="close">cancel</button>
+        </div>
+    </div>
+    <div class="popup2">
+        <div class="pay-cancel">
+            <img src="./images/success.png" alt="" />
+            <br />
+            <br />
+            <h1>ชำระสำเร็จ</h1>
+            <br />
+            <br />
+            <button class="success_button" id="close2">BACK</button>
+        </div>
+    </div>
+    <!--Script-->
+    <script type="text/javascript">
+        document.getElementById("pop").onclick = popup1;
+        document.getElementById("pay").onclick = popup2;
+
+        function popup1() {
+            document.querySelector(".popup1").style.display = "block";
+            document.querySelector("#close").addEventListener("click", function() {
+                document.querySelector(".popup1").style.display = "none";
+            });
+        }
+
+        function popup2() {
+            document.querySelector(".popup1").style.display = "none";
+            document.querySelector(".popup2").style.display = "block";
+            document
+                .querySelector("#close2")
+                .addEventListener("click", function() {
+                    document.querySelector(".popup2").style.display = "none";
+                });
+        }
+    </script>
+</body>
+
+</html>
